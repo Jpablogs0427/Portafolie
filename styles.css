@@ -1,0 +1,299 @@
+
+/* Reseteo Estilos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background-color: #0e2666;
+    background-image: url("fondo3.avif");
+    background-size: 100%;
+    /* background-repeat: cover; */
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+header{
+    text-align:center;
+    margin-bottom: 30px;
+    width: 90%
+}
+
+.personal-data{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+li{
+    line-height: 26px;
+}
+
+.about-me{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;  
+    margin-top: 5px;
+}
+
+p{
+    line-height:28px;
+}
+
+.titulo{
+
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.profile-pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px #2463eb;
+    transition: transform 0.3s;
+
+}
+
+
+.profile-pic:hover{
+    transform: scale(1.2);
+}
+
+.support-1{
+    
+    gap: 20px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px #2463eb;
+    transition: transform 0.3s;
+}
+
+.support-1:hover{
+    transform: scale(1.2);
+}
+
+h1{
+    color:#2463eb;
+}
+
+.description{
+    margin-top: 10px;
+    text-align: justify;
+    padding: 10px;
+    }
+
+.experience{    
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top:5px;
+}
+
+.titulo1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+h2{
+    color:#2463eb;
+    text-align: start;
+
+    display: inline-block; /* Hace que el título se comporte como un bloque en línea */
+      position: relative; /* Necesario para colocar la línea correctamente */
+      padding-bottom: 2px; /* Espacio entre el texto y la línea */
+    }
+
+    h2:hover::after {
+      content: ''; /* Necesario para crear un pseudo-elemento vacío */
+      position: absolute; /* Posiciona la línea debajo del título */
+      left: 0;
+      bottom: 0;
+      width: 100%; /* Hace que la línea ocupe todo el ancho del título */
+      height: 2px; /* Grosor de la línea */
+      background-color: #000;
+
+}
+
+h4{
+    transition: transform 0.3s ease;
+    }
+  
+    h4:hover{
+        transform: rotate(10deg); /* Rota el título 10 grados */
+      
+}
+
+.hr1{
+    width: 100%;
+}
+hr{
+    border: 1px solid #2463eb ;
+    width: 90%;
+    
+}
+.group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+.experience-item{
+
+    background-color: rgba(57, 57, 144, 0.978);
+    padding: 10px;
+    border-left: 4px solid #2463eb;
+    width: 280px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.competence{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top:5px;
+}
+
+.competence-item{
+    padding: 27px;
+    border-left: 4px solid #2463eb;
+    width: 280px;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 90%;
+}
+
+.experience-item:hover{
+    background-color: rgb(152, 118, 152);
+}
+
+.contact-me{
+    align-items: center;
+    width: 30%;
+    margin-left: 10px;
+    margin: 10px;
+}
+
+.socialjobs{
+ width: 50%;
+}
+
+.socialjobs img {
+    
+    width: 100px;
+    height: 100     px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px #2463eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 300px; 
+}
+
+socialjobs:hover{
+    box-shadow: 0 8px 16px rgba(240, 3, 3, 0.2);
+}
+
+.contact{
+    
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+form{
+
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input,textarea{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:  #2463eb;
+    color: black;
+}
+
+button{
+    background-color: #2463eb;
+    color: black;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 8px 16px rgba(240, 3, 3, 0.2);
+}
+
+td,th{
+    border: 1px solid #2463eb;
+}
+
+.data{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.endpage{
+    margin-top: 20px;
+    text-align: center;
+}
